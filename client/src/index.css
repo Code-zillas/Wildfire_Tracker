@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+  margin: 0;
+  letter-spacing: 0.04em;
+  text-shadow: 2px 2px 0px rgba(204, 204, 204, 0.2);
+  margin-inline: 15px;
+}
+
+.app {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+.header {
+  height: 80px;
+  color: orangered;
+  background-color: rgba(9, 3, 23, 0.929);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  position: absolute;
+  width: 100%;
+}
+
+/* marker */
+.card {
+  width: 230px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+label {
+  width: max-content;
+  color: orangered;
+  font-size: 1.2em;
+  border-bottom: 0.5px solid orangered;
+  margin: 3px 0;
+}
+
+.firepower-icon {
+  width: 25px;
+  height: 25px;
+}
+
+.username,
+.place,
+.description,
+.date {
+  font-size: 1.1em;
+}
+
+form {
+  width: 260px;
+  height: 260px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: rgb(88, 87, 87);
+}
+
+input {
+  border: none;
+  border-bottom: 1px solid gray;
+}
+
+input::placeholder,
+textarea::placeholder {
+  font-size: 14px;
+  color: rgb(185, 184, 184);
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+}
+
+textarea {
+  border: none;
+  border-bottom: 1px solid gray;
+}
+
+.hidden {
+  display: none;
+}
+
+.submit-button {
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
+  color: white;
+  background-color: orangered;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+/* Sign up, Login, Logout buttons */
+buttons,
+.logout {
+  top: 10px;
+  right: 10px;
+}
+
+.button {
+  border: none;
+  padding: 10px 15px;
+  text-transform: capitalize;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  margin: 20px;
+}
+
+.button:focus {
+  outline: none;
+}
+
+.logout {
+  background-color: orangered;
+  position: absolute;
+}
+
+.login {
+  background-color: #107c42;
+  margin-right: 130px;
+  position: absolute;
+}
+
+.signup {
+  background-color: #007bff;
+  position: absolute;
+}
+.current-user {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  margin-right: 150px;
+  margin-top: 30px;
+  color: white;
+}
+/* Sign up account form ano login account form */
+
+.wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.481);
+  transition: 0.5s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 5;
+}
+
+.signup-wrapper,
+.login-wrapper {
+  width: 400px;
+  height: 400px;
+  padding: 40px;
+  border-radius: 10px;
+  background-color: white;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.login-wrapper {
+  width: 300px;
+  height: 300px;
+}
+
+.signup-header,
+.login-header {
+  margin-bottom: 0.5em;
+  font-size: 1.2em;
+}
+
+.signup-form,
+.login-form {
+  width: 100%;
+}
+
+.signup-form input,
+.signup-form input::placeholder,
+.login-form input,
+.login-form input::placeholder {
+  font-size: 0.9em;
+  margin: 10px 0;
+}
+
+.signup-cancel,
+.login-cancel {
+  position: absolute;
+  top: 3px;
+  right: 3px;
+  cursor: pointer;
+  width: 18px;
+  margin: 2px;
+}
+
+.signup-button,
+.login-button,
+.logout-button {
+  border: none;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 15px;
+}
+
+.login-button {
+  background-color: green;
+}
+
+.success,
+.failure {
+  font-size: 0.7em;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.failure {
+  color: red;
+}
+
+.success {
+  color: green;
+}
